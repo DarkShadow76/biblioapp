@@ -1,0 +1,101 @@
+/* styles.css */
+.Navbar {
+    background-color: black;
+    height: 60px;
+    margin-bottom: 10%;
+  }
+  
+  .textColor {
+    color: white;
+  }
+  
+  .boton-body {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .container-body {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .container-nav {
+    text-align: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .container-footer {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+  
+  .image {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .image-1 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 35%;
+    height: 25%;
+  }
+  
+  /** style={{height:"85%",width:"90%", alignContent:"center"}} **/
+  
+  .containerCarrusel {
+    height: 85%;
+    width: 90%;
+  }
+  
+  .gradient {
+    background: #ede4ff;
+    /* Forma: círculo */
+    /* Colores: de #FF5733 a #FFC300 */
+  }
+  
+  .ImgTest {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .testFormat {
+    display: grid;
+    gap: 32px;
+  }
+  
+  .calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: "60%";
+    background-color: #f0f0f0;
+  }
+  
+  .react-calendar {
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .react-calendar-event {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
