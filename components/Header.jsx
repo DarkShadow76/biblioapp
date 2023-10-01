@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import { Container, NavDropdown } from "react-bootstrap";
 import Offcanvas from 'react-bootstrap/Offcanvas';
+const getEmpresa = require("./data.jsx")
 import Button from 'react-bootstrap/Button';
 import '../styles/custom.css'
 //import Image from "react-bootstrap";
@@ -32,6 +33,9 @@ const Header = (props) => {
                   <Nav.Link href="#action2">Prefil</Nav.Link>
                   <Nav.Link href="#action3">Biblioteca</Nav.Link>
                 </Nav>
+                <div style={{ placeItems: "end", marginTop: "120%" }}>
+                  {getEmpresa.getEmpresa()}
+                </div>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

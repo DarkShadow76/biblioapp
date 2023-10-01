@@ -1,7 +1,7 @@
 "use client"
-import Layout from "../../components/Layout"
-import Header from "../../components/Header"
-import Footer from "../../components/Footer"
+import Layout from "../../../components/Layout"
+import Header from "../../../components/Header"
+import Footer from "../../../components/Footer"
 import { Button, Card, Container } from "react-bootstrap"
 import Image from 'react-bootstrap/Image';
 import Form from 'react-bootstrap/Form';
@@ -16,11 +16,11 @@ const Page = () => {
     makeBody={
       () => <div>
         <Container>
-          <h2>Hola Diana</h2>
+          <h2>Hola User</h2>
           <Card style={{ width: '90%', height: "90%" }}>
             <Row>
               <Col sm={4}>
-                <Image style={{ display: "flex", marginTop: "0 auto", marginLeft: "3%", height: "90%", width: "90%" }} src="/images/thispersondoesnotexist.jpg" roundedCircle />
+                <h1>Profile Pic</h1>
               </Col>
               <Col sm={8}>
                 <Tabs
@@ -60,23 +60,6 @@ const Page = () => {
                       <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
-                      </Form.Group>
-                      <Button style={{ marginBottom: "5%" }} variant="primary">Guardar</Button>{' '}
-                    </div>
-                  </Tab>
-                  <Tab eventKey="contact" title="Preferencias">
-                    <div style={{ alignContent: "center", width: "90%" }}>
-                      <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Idioma</Form.Label>
-                        <Form.Control type="email" placeholder="" />
-                      </Form.Group>
-                      <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Prefijo</Form.Label>
-                        <Form.Control type="email" placeholder="" />
-                      </Form.Group>
-                      <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Color</Form.Label>
-                        <Form.Control type="email" placeholder="" />
                       </Form.Group>
                       <Button style={{ marginBottom: "5%" }} variant="primary">Guardar</Button>{' '}
                     </div>

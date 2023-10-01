@@ -6,7 +6,6 @@ const Layout = (props) => {
     <Container>
       {props.makeHeader()}
       {props.makeBody()}
-      {props.makeFooter()}
     </Container>
   </>
 }
