@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Form from 'react-bootstrap/Form';
 import { Container, NavDropdown } from "react-bootstrap";
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 import '../styles/custom.css'
 //import Image from "react-bootstrap";
@@ -9,26 +11,32 @@ import '../styles/custom.css'
 const Header = (props) => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" data-bs-theme="white">
-      <Container className="container-nav" style={{ alignContent: "center" }}>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto" style={{ maxHeight: '10rem' }} navbarScroll>
-            <Navbar.Brand href="/" style={{ color: "black" }}>Biblio App</Navbar.Brand>
-            <h5 style={{textAlign: "center"}}>{props.titulo}</h5>
-          </Nav>
-        </Navbar.Collapse>
-        <Button href="/login/signin" style={{ alignContent: "right" }} variant="outline-primary">
-          Sig Up
-        </Button>{' '}
-        <Button href="/login" style={{
-          alignContent: "right",
-          marginLeft: "1%"
-        }} variant="outline-success">
-          Log in
-        </Button>{' '}
-      </Container>
-    </Navbar >
+      {['xxl'].map((expand) => (
+        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+          <Container fluid>
+            <Navbar.Brand href="/">BiblioApp</Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="start"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Offcanvas
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#action1">Inicio</Nav.Link>
+                  <Nav.Link href="#action2">Prefil</Nav.Link>
+                  <Nav.Link href="#action3">Biblioteca</Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
     </>
   );
 }
