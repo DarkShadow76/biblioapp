@@ -15,25 +15,7 @@ const Header = (props) => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{ maxHeight: '10rem' }} navbarScroll>
             <Navbar.Brand href="/" style={{ color: "black" }}>Biblio App</Navbar.Brand>
-            <Nav.Link href="/" className="textColor" style={{ color: "black" }}>Home</Nav.Link>
-            <Nav.Link href="/about" style={{ color: "black" }}>About</Nav.Link>
-            <Nav.Link href="/actividades" className="nav-item active" style={{ color: "black" }}>Support
-            </Nav.Link>
-            <Nav.Link href="/configurar" style={{ color: "black" }}>Review
-            </Nav.Link>
-            <NavDropdown title="Servicios" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action3" >
-                Acccion 1
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action4">
-                Accion 2
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Accion 3
-              </NavDropdown.Item>
-            </NavDropdown>
+            <h5 style={{textAlign: "center"}}>{props.titulo}</h5>
           </Nav>
         </Navbar.Collapse>
         <Button href="/login/signin" style={{ alignContent: "right" }} variant="outline-primary">
@@ -47,10 +29,6 @@ const Header = (props) => {
         </Button>{' '}
       </Container>
     </Navbar >
-      <h2 style={{
-        marginTop: "1%",
-        textAlign: "center"
-      }}>{props.titulo}</h2>
     </>
   );
 }
