@@ -20,7 +20,9 @@ const Page = () => {
           <Card style={{ width: '90%', height: "90%" }}>
             <Row>
               <Col sm={4}>
-                <Image style={{ display: "flex", marginTop: "0 auto", marginLeft: "3%", height: "90%", width: "90%" }} src="/images/thispersondoesnotexist.jpg" roundedCircle />
+                <div>
+                  <Image style={{ display: "flex", marginTop: "5%", marginLeft: "5%", height: "90%", width: "90%" }} src="/images/thispersondoesnotexist.jpg" fluid roundedCircle />
+                </div>
               </Col>
               <Col sm={8}>
                 <Tabs
