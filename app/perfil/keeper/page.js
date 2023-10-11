@@ -20,7 +20,7 @@ const Page = () => {
           <Card style={{ width: '90%', height: "90%" }}>
             <Row>
               <Col sm={4}>
-                <h1>Profile Pic</h1>
+                <Image className="imagen-perfil" src="/images/thispersondoesnotexist.jpg" fluid roundedCircle />
               </Col>
               <Col sm={8}>
                 <Tabs

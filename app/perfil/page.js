@@ -21,7 +21,7 @@ const Page = () => {
             <Row>
               <Col sm={4}>
                 <div>
-                  <Image style={{ display: "flex", marginTop: "5%", marginLeft: "5%", height: "90%", width: "90%" }} src="/images/thispersondoesnotexist.jpg" fluid roundedCircle />
+                  <Image className="imagen-perfil" src="/images/thispersondoesnotexist.jpg" fluid roundedCircle />
                 </div>
               </Col>
               <Col sm={8}>

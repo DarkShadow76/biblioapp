@@ -2,9 +2,6 @@
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Carrusel from "../components/carrusel"
-import { Container } from "react-bootstrap"
-import Image from 'react-bootstrap/Image';
 
 const Page = () => {
   return <Layout
@@ -12,6 +9,7 @@ const Page = () => {
     makeBody={
       () => <div>
         <h1>Grupo 2</h1>
+        <li>Abraham Silvera Mogollon</li>
       </div>
     }
     makeFooter={() => <Footer />}

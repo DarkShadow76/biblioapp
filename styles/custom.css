@@ -100,9 +100,26 @@
     cursor: pointer;
   }
 
+  .imagen-libro {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 90%;
+    width: 90%;
+  }
+
+  .imagen-perfil {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 90%;
+    width: 90%;
+  }
+
   .card {
     background-color: bisque;
     width: 90%;
-    padding-block: initial;
+    padding-left: 2%;
+    padding-top: 1%;
     margin-bottom: auto;
   }

@@ -1,13 +1,14 @@
 "use client"
+import Layout from '../../components/Layout';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { Image } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./../../styles/custom.css"
 import { useEffect } from "react"
 import { libros_reservados, libros_vencer } from '../../components/libros.js';
-import Layout from '../../components/Layout';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 const Page = () => {
 
@@ -29,7 +30,7 @@ const Page = () => {
       () => <div>
         <Card className='card'>
           <Row className="custom-row">
-            <h1>Bienvenido Abrahm</h1>
+            <h1>Bienvenido Abraham</h1>
             <h2>Ultimas reservas</h2>
             <Col>
               <Row xs={1} md={3} className="g-4">
@@ -37,6 +38,7 @@ const Page = () => {
                   <Col key={libro.id}>
                     <Card className='card'>
                       <Card.Body>
+                        <Image className="imagen-libro" src={libro.image} thumbnail />
                         <Card.Title>{libro.titulo}</Card.Title>
                         <Card.Text>
                           <h6>{libro.autor}</h6>
@@ -47,7 +49,7 @@ const Page = () => {
                     </Card>
                   </Col>
                 ))}
-              </Row>|
+              </Row>
             </Col>
           </Row>
         </Card>
@@ -59,6 +61,7 @@ const Page = () => {
                 {libros_vencer.map((libro) => (
                   <Col key={libro.id}>
                     <Card>
+                      <Image style={{ display: "flex", marginTop: "5%", marginLeft: "5%", height: "90%", width: "90%" }} src={libro.image} thumbnail />
                       <Card.Body>
                         <Card.Title>{libro.titulo}</Card.Title>
                         <Card.Text>
