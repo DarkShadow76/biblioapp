@@ -1,0 +1,124 @@
+.main_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 160px;
+    padding-top: 15px;
+}
+
+.tituloForm {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 1.5px solid #6750a4;
+    border-radius: 10px;
+    background-color: #FEF7FF;
+    height: 43px;
+    width: 100%; 
+    margin-bottom: 30px;
+}
+
+.inputCont {
+    justify-content: center;
+    flex-direction: column;
+    width: 291px;
+    margin: auto;
+}
+
+.formCont {
+    display: flex;
+    flex-direction: column;
+    width: 743px;
+    padding: 60px;
+}
+
+.divisor {
+    width: 95%;
+    height: 1px;
+    background: #CAC4D0;
+}
+
+.imgCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCont img {
+    width: 75%;
+    height: auto;
+}
+
+.formularioCont {
+    display: flex;
+    background-color: #F3EDF7;
+    height: calc(100vh - 200px);
+    width: 95%;
+    margin-top: 25px;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.input {
+    border: 1.5px solid #6750a4;
+    box-sizing: border-box;
+    background-color: #F3EDF7;
+    position: relative;
+    border-radius: 4px;
+    margin: 5px 0;
+    height: 45px;
+    width: 100%;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.label {
+    background-color: #F3EDF7;
+    pointer-events: none;
+    border-radius: 10px;
+    position: relative;
+    width: fit-content;
+    color: #6750A4;
+    font-size: 14px;
+    padding: 0 5px;
+    z-index: 1;
+    top: -36px;
+    left: 10px;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease,
+        padding 0.3s ease;
+}
+
+.input:focus+.label,
+.input:valid+.label {
+   background-color:#F3EDF7; 
+   color:#6750a4; 
+   font-size :12px; 
+   top:-60px; 
+}
+
+#guardarB {
+    background-color: #F3EDF7;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #6750A4;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    width: 247px;
+    border: 1.5px solid #6750a4;
+    
+}
+
+.contBut {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    width: 247px;
+    margin: auto;
+}

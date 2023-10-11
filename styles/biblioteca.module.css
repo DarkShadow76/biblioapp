@@ -1,0 +1,159 @@
+.main_content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 160px;
+  padding-top: 15px;
+}
+
+.listaLibros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  padding-right: 25px;
+  padding-top: 15px;
+}
+
+.titulo {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.libro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 450px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 20px;
+  padding: 0;
+}
+
+#addbutton {
+  background-color: #e8def8;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #1d192b;
+  margin-right: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  height: 30px;
+}
+
+.divisor{
+  width: 100%;
+  height: 1px;
+  background: #CAC4D0;
+  padding: 0;
+}
+
+.libro_cabecera h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+
+.libro_cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.libro_imagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+.libro_imagen{
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+}
+
+.libro_detalle{
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.libro_detalle p {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.searchButton{
+    border: 1.5px solid #6750a4;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    height: 40px;
+    width: 35%;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+#libroButton {
+    background-color: #e8def8;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #1d192b;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonLibro{
+  margin-bottom: 20px;
+}
+
+.paginasButton {
+  text-align: right;
+  padding-right: 30px;
+  font-size: 13px;
+}
+
+.paginasBotones{
+  background-color: #e8def8;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #1d192b;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+}
+
+.circulo_iniciales {
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c7b7e2;
+  flex-shrink: 0;
+}

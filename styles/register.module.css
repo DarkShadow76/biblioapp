@@ -1,0 +1,101 @@
+.body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+h1.tituloPrincipal{
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+h2.tituloSecundario{
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+h1.tituloPrincipal,h2.tituloSecundario{
+    margin: 10px;
+}
+
+p.subTitulos {
+    font-style: normal;
+    line-height: 20px;
+    color: #6750A4;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#registerButton {
+    background-color: #e8def8;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 10px 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    width: 100%;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.personalContainer {
+    flex-direction: column;
+    margin-right: 80px;
+    width: 291px;
+}
+.cuentaContainer {
+    flex-direction: column;
+    margin-left: 80px;
+    width: 291px;
+}
+
+.input {
+    border: 1.5px solid #6750a4;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 10px;
+    height: 45px;
+    width: 100%;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.label{
+    background-color: #fff;
+    pointer-events: none;
+    border-radius: 10px;
+    position: relative;
+    width: fit-content;
+    color: #6750A4;
+    font-size: 14px;
+    padding: 0 5px;
+    z-index: 1;
+    top: -36px;
+    left: 10px;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease,
+        padding 0.3s ease;
+}
+
+.input:focus + .label, .input:valid + .label {
+    background-color: #fff;
+    color: #6750a4;
+    font-size: 12px;
+    top: -60px;
+}

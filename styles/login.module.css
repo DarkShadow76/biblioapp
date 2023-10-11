@@ -1,0 +1,100 @@
+.loginContainer {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 291px;
+    width: 291px;
+    margin: auto;
+}
+
+.inputContainer {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+h1.tituloPrincipal {
+    font-size: 36px;
+    margin: 10px;
+}
+
+.input[type="password"],
+.input[type="text"] {
+    border: 1.5px solid #6750a4;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.inputContainer label {
+    font-size: 14px;
+    left: 10px;
+    padding: 0 5px;
+    pointer-events: none;
+    position: absolute;
+    top: 27px;
+    transition: top 0.3s;
+    color: #6750a4;
+    background-color: #fff;
+}
+
+.inputContainer input:focus~label,
+.inputContainer input:valid~label {
+    top: -1px;
+}
+
+#forgotPassword {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    line-height: 20px;
+    font-weight: 700;
+    color: #6750a4;
+    font-size: 12px;
+}
+
+.forgotPasswordContainer {
+    text-align: right;
+}
+
+.buttonContainer {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#registerLink {
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    color: #6750a4;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#loginButton {
+    background-color: #e8def8;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #1d192b;
+    margin-top: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+}
+
+#registerLink:hover {
+    background-color: #f3f1f8;
+}
+
+#loginButton:hover {
+    background-color: #d8cee8;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}

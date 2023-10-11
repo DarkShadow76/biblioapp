@@ -1,0 +1,102 @@
+.Contenedor{
+    padding-left: 150px;
+}
+.formulario{
+    display: flex;
+}
+.divisor{
+    width: 100%;
+    height: 1px;
+    background: #CAC4D0;
+}
+.SubConte{
+display: flex;
+width: 30%;
+flex-direction: column;
+}
+.Busqueda{
+display: flex;
+flex-direction: column;
+width: 40%;
+padding-left: 100px;
+color: #6750a4;
+}
+.Box2{
+    display: flex;
+}
+.Botones{
+    display: flex;
+    padding-top: 60px ;
+}
+.Opciones{
+    flex-direction: column;
+    display: flex;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    outline: 2px solid #6750a4;
+    padding: 50px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.input[type="text"] {
+    border: 1.5px solid #6750a4;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.inputContainer label {
+    font-size: 14px;
+    left: 10px;
+    padding: 0 5px;
+    pointer-events: none;
+    position: absolute;
+    top: 27px;
+    transition: top 0.3s;
+    color: #6750a4;
+    background-color: #fff;
+}
+
+.inputContainer input:focus~label,
+.inputContainer input:valid~label {
+    top: -1px;
+}
+.inputContainer {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+.BoxBotones{
+    display: flex;
+    gap: 20px;
+    width: 30%;
+    padding-top: 150px;
+}
+.Botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    padding: 0;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.Botones:hover {
+    background: #a899c0;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}

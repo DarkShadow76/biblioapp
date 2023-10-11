@@ -1,0 +1,142 @@
+/* Estilos para el contenedor principal */
+.ContenidoIzquierdo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #6f42c1; /* Color de fondo morado */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilos para el contenedor de opciones izquierdas */
+.Opciones.Izquierda {
+    text-align: center;
+}
+
+/* Estilos para la lista de opciones izquierdas */
+.Opciones.Izquierda ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista de opciones izquierdas */
+.Opciones.Izquierda li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces de las opciones izquierdas */
+.Opciones.Izquierda a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de título */
+.seccion_titulo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilos para la línea horizontal */
+.linea_horizontal {
+    width: 100%;
+    height: 1px;
+    background-color: #fff; /* Color de la línea horizontal */
+    margin: 20px 0;
+}
+
+/* Estilos para la sección de perfil */
+.seccion_perfil {
+    text-align: center;
+}
+
+/* Estilos para la foto del administrador */
+.foto_administrador {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de carga de imagen */
+.foto_administrador input[type="file"] {
+    display: none;
+}
+
+/* Estilos para el label del botón de carga de imagen */
+.foto_administrador label {
+    cursor: pointer;
+    background-color: #6f42c1; /* Color de fondo morado */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para las opciones superiores */
+.Opciones.Superior {
+    text-align: center;
+}
+
+/* Estilos para los botones de opciones */
+.Opcion_Superior button {
+    background-color: transparent;
+    color: #fff; /* Color del texto de los botones */
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Estilos para los botones de opciones activadas */
+.Opcion_Superior button.opcion-activada {
+    background-color: #fff; /* Color de fondo blanco */
+    color: #6f42c1; /* Color del texto de los botones activados (morado) */
+    border-radius: 5px;
+}
+
+/* Estilos para las columnas de contenido */
+.columna_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los contenedores de entrada y etiquetas */
+.input_container_2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilos para las etiquetas de entrada */
+.form_label_2 {
+    color: #6f42c1; /* Color de texto morado para las etiquetas */
+}
+
+/* Estilos para las entradas de texto */
+.form_input_2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Color del borde gris claro */
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Estilos para el botón de guardar */
+.button_container_2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registro_button_2 {
+    background-color: #6f42c1; /* Color de fondo morado */
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para el botón de guardar al pasar el cursor sobre él */
+.registro_button_2:hover {
+    background-color: #543d8e; /* Cambia el color de fondo al pasar el cursor */
+}
