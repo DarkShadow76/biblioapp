@@ -29,6 +29,8 @@ const Page = () => {
     makeBody={
       () => <div>
         <Container style={{ width: "85%" }}>
+          <h3 style={{ textAlign: "center" }}>Sistema de Reserva  de Libros</h3>
+          <h4 style={{ textAlign: "center", marginBottom: "4%" }}>Registro de Usuario</h4>
           <Row>
             <Col xs={6}>
               <h5>Datos Personales</h5>
@@ -65,7 +67,7 @@ const Page = () => {
                 <Form.Label>Ingrese Password nuevamente</Form.Label>
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
-              <Button variant="primary">Primary</Button>{' '}
+              <Button variant="primary">Registrar</Button>{' '}
             </Col>
           </Row>
         </Container>
