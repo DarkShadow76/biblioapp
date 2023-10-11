@@ -99,3 +99,10 @@
     margin-bottom: 5px;
     cursor: pointer;
   }
+
+  .card {
+    background-color: bisque;
+    width: 90%;
+    padding-block: initial;
+    margin-bottom: auto;
+  }

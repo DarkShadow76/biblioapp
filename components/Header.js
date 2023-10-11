@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import { Container, NavDropdown } from "react-bootstrap";
 import Offcanvas from 'react-bootstrap/Offcanvas';
-const getEmpresa = require("./data.jsx")
+const getEmpresa = require("./data.js")
 import Button from 'react-bootstrap/Button';
 import '../styles/custom.css'
 //import Image from "react-bootstrap";

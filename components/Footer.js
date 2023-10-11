@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-const getEmpresa = require("./data.jsx")
+const getEmpresa = require("./data.js")
 import Image from 'react-bootstrap/Image';
 
 const Footer = () => {

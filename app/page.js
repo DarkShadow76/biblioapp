@@ -11,7 +11,7 @@ const Page = () => {
     makeHeader={() => <Header titulo="Encabezado Innovador" />}
     makeBody={
       () => <div>
-        <h1>Grupo #</h1>
+        <h1>Grupo 2</h1>
       </div>
     }
     makeFooter={() => <Footer />}
