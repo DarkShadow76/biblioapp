@@ -9,10 +9,10 @@ function FormRegistro() {
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
-    tipoDocumento: '',
-    numeroDocumento: '',
-    correoElectronico: '',
-    password: '',
+    tipo_documento: '',
+    n_documento: '',
+    email: '',
+    contrasenia: '',
   });
 
   const handleInputChange = (event) => {
@@ -20,12 +20,19 @@ function FormRegistro() {
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleTipoDocumentoChange = (event) => {
+    const selectedTipoDocumento = event.target.value;
+    setFormData({ ...formData, tipo_documento: selectedTipoDocumento });
+  };
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
+    } else {
+      // Store the form data in local storage
+      localStorage.setItem('formData', JSON.stringify(formData));
     }
 
     setValidated(true);
@@ -60,7 +67,7 @@ function FormRegistro() {
           <Form.Select
             name="tipo_documento"
             aria-label="Tipo de Documento"
-            value={formData.tipoDocumento}
+            value={formData.tipo_documento}
             onChange={handleTipoDocumentoChange}
           >
             <option>Tipo de Documento</option>
@@ -74,7 +81,8 @@ function FormRegistro() {
             <Form.Control
               type="text"
               name="n_documento"
-              value={formData.numeroDocumento}
+              placeholder="777"
+              value={formData.n_documento}
               onChange={handleInputChange} />
           </Form.Group>
         </Col>
@@ -83,21 +91,21 @@ function FormRegistro() {
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Correo Electrónico</Form.Label>
             <Form.Control
-            type="email"
-            name="email"
-            placeholder="Enter email"
-            value={formData.correoElectronico}
-            onChange={handleInputChange}
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              value={formData.email}
+              onChange={handleInputChange}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control
-            type="password"
-            name="contrasenia"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleInputChange}/>
+              type="password"
+              name="contrasenia"
+              placeholder="Password"
+              value={formData.contrasenia}
+              onChange={handleInputChange} />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Ingrese Password nuevamente</Form.Label>
