@@ -1,72 +1,82 @@
 [
   {
-    "name": "John",
+    "nombre": "John",
     "apellido": "Doe",
-    "n_documento": "123456789",
-    "email": "john.doe@example.com",
-    "contrasenia": "password"
-  },
-  {
-    "name": "Jane",
-    "apellido": "Smith",
-    "n_documento": "987654321",
-    "email": "jane.smith@example.com",
+    "tipo_documento": "DNI",
+    "n_documento": "12345678",
+    "email": "johndoe@example.com",
     "contrasenia": "password123"
   },
   {
-    "name": "Michael",
+    "nombre": "Jane",
+    "apellido": "Smith",
+    "tipo_documento": "Passport",
+    "n_documento": "A1234567",
+    "email": "janesmith@example.com",
+    "contrasenia": "p@ssw0rd"
+  },
+  {
+    "nombre": "Michael",
     "apellido": "Johnson",
-    "n_documento": "456789123",
-    "email": "michael.johnson@example.com",
-    "contrasenia": "qwerty"
+    "tipo_documento": "Driver's License",
+    "n_documento": "98765432",
+    "email": "michaeljohnson@example.com",
+    "contrasenia": "securepassword"
   },
   {
-    "name": "Emily",
+    "nombre": "Emily",
     "apellido": "Brown",
-    "n_documento": "321654987",
-    "email": "emily.brown@example.com",
-    "contrasenia": "abcdef"
+    "tipo_documento": "Social Security Number",
+    "n_documento": "987-65-4321",
+    "email": "emilybrown@example.com",
+    "contrasenia": "safepass123"
   },
   {
-    "name": "Daniel",
-    "apellido": "Davis",
-    "n_documento": "789123456",
-    "email": "daniel.davis@example.com",
-    "contrasenia": "123456"
+    "nombre": "David",
+    "apellido": "Lee",
+    "tipo_documento": "Residence Permit",
+    "n_documento": "1234567",
+    "email": "davidlee@example.com",
+    "contrasenia": "strongpass"
   },
   {
-    "name": "Olivia",
+    "nombre": "Sophia",
     "apellido": "Wilson",
-    "n_documento": "654987321",
-    "email": "olivia.wilson@example.com",
-    "contrasenia": "password789"
+    "tipo_documento": "National ID",
+    "n_documento": "A1234567",
+    "email": "sophiawilson@example.com",
+    "contrasenia": "password12345"
   },
   {
-    "name": "Matthew",
+    "nombre": "Daniel",
     "apellido": "Taylor",
-    "n_documento": "234567891",
-    "email": "matthew.taylor@example.com",
-    "contrasenia": "qwerty123"
+    "tipo_documento": "Passport",
+    "n_documento": "B7654321",
+    "email": "danieltaylor@example.com",
+    "contrasenia": "p@ssw0rd"
   },
   {
-    "name": "Sophia",
+    "nombre": "Olivia",
     "apellido": "Anderson",
-    "n_documento": "543219876",
-    "email": "sophia.anderson@example.com",
-    "contrasenia": "abc123"
+    "tipo_documento": "Driver's License",
+    "n_documento": "87654321",
+    "email": "oliviaanderson@example.com",
+    "contrasenia": "securepassword"
   },
   {
-    "name": "Andrew",
+    "nombre": "Matthew",
     "apellido": "Thomas",
-    "n_documento": "678912345",
-    "email": "andrew.thomas@example.com",
-    "contrasenia": "password456"
+    "tipo_documento": "Social Security Number",
+    "n_documento": "876-54-3210",
+    "email": "matthewthomas@example.com",
+    "contrasenia": "safepass123"
   },
   {
-    "name": "Ava",
-    "apellido": "Harris",
-    "n_documento": "891234567",
-    "email": "ava.harris@example.com",
-    "contrasenia": "123abc"
+    "nombre": "Ava",
+    "apellido": "White",
+    "tipo_documento": "Residence Permit",
+    "n_documento": "7654321",
+    "email": "avawhite@example.com",
+    "contrasenia": "strongpass"
   }
 ]

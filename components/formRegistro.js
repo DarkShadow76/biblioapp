@@ -2,11 +2,24 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 
 function FormRegistro() {
   const [validated, setValidated] = useState(false);
+  const [formData, setFormData] = useState({
+    nombre: '',
+    apellido: '',
+    tipoDocumento: '',
+    numeroDocumento: '',
+    correoElectronico: '',
+    password: '',
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -27,38 +40,70 @@ function FormRegistro() {
           <h5>Datos Personales</h5>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Nombres</Form.Label>
-            <Form.Control type="email" placeholder="Juan" />
+            <Form.Control
+              type="text"
+              placeholder="Juan"
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleInputChange}
+            />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Apellidos</Form.Label>
-            <Form.Control type="email" placeholder="Peréz" />
+            <Form.Control
+              type="text"
+              placeholder="Peréz"
+              name="apellido"
+              value={formData.apellido}
+              onChange={handleInputChange} />
           </Form.Group>
-          <Form.Select aria-label="Default select example">
+          <Form.Select
+            name="tipo_documento"
+            aria-label="Tipo de Documento"
+            value={formData.tipoDocumento}
+            onChange={handleTipoDocumentoChange}
+          >
             <option>Tipo de Documento</option>
             <option value="1">DNI</option>
-            <option value="2">Carnet Extrangeria</option>
-            <option value="3">En tramite</option>
+            <option value="2">Licencia de Conducir</option>
+            <option value="3">Carné de extranjeria</option>
+            <option value="4">Pasaporte</option>
           </Form.Select>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Nomero de Documento</Form.Label>
-            <Form.Control type="email" placeholder="" />
+            <Form.Label>Numero de Documento</Form.Label>
+            <Form.Control
+              type="text"
+              name="n_documento"
+              value={formData.numeroDocumento}
+              onChange={handleInputChange} />
           </Form.Group>
         </Col>
         <Col xs={6}>
           <h5>Datos de Cuenta</h5>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Correo Electrónico</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            value={formData.correoElectronico}
+            onChange={handleInputChange}
+            />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control
+            type="password"
+            name="contrasenia"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleInputChange}/>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Ingrese Password nuevamente</Form.Label>
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
-          <Button variant="primary">Registrar</Button>
+          <Button type='submit' variant="primary">Registrar</Button>
         </Col>
       </Row>
     </Form>
