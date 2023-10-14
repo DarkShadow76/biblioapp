@@ -1,0 +1,72 @@
+[
+  {
+    "name": "John",
+    "apellido": "Doe",
+    "n_documento": "123456789",
+    "email": "john.doe@example.com",
+    "contrasenia": "password"
+  },
+  {
+    "name": "Jane",
+    "apellido": "Smith",
+    "n_documento": "987654321",
+    "email": "jane.smith@example.com",
+    "contrasenia": "password123"
+  },
+  {
+    "name": "Michael",
+    "apellido": "Johnson",
+    "n_documento": "456789123",
+    "email": "michael.johnson@example.com",
+    "contrasenia": "qwerty"
+  },
+  {
+    "name": "Emily",
+    "apellido": "Brown",
+    "n_documento": "321654987",
+    "email": "emily.brown@example.com",
+    "contrasenia": "abcdef"
+  },
+  {
+    "name": "Daniel",
+    "apellido": "Davis",
+    "n_documento": "789123456",
+    "email": "daniel.davis@example.com",
+    "contrasenia": "123456"
+  },
+  {
+    "name": "Olivia",
+    "apellido": "Wilson",
+    "n_documento": "654987321",
+    "email": "olivia.wilson@example.com",
+    "contrasenia": "password789"
+  },
+  {
+    "name": "Matthew",
+    "apellido": "Taylor",
+    "n_documento": "234567891",
+    "email": "matthew.taylor@example.com",
+    "contrasenia": "qwerty123"
+  },
+  {
+    "name": "Sophia",
+    "apellido": "Anderson",
+    "n_documento": "543219876",
+    "email": "sophia.anderson@example.com",
+    "contrasenia": "abc123"
+  },
+  {
+    "name": "Andrew",
+    "apellido": "Thomas",
+    "n_documento": "678912345",
+    "email": "andrew.thomas@example.com",
+    "contrasenia": "password456"
+  },
+  {
+    "name": "Ava",
+    "apellido": "Harris",
+    "n_documento": "891234567",
+    "email": "ava.harris@example.com",
+    "contrasenia": "123abc"
+  }
+]
