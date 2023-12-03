@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Layout from "../../../components/Layout"
 import Header from "../../../components/Header"
 import Footer from "../../../components/Footer"
-import datos from "../../../components/library.json";
+import datos from "../../../json/library.json";
 import styles from "../../../styles/busquedaResultado.module.css";
 
 const LibrosPorPagina = 3

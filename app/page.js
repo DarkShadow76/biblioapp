@@ -9,7 +9,7 @@ const Page = () => {
     makeBody={
       () => <div>
         <h1>Grupo 2</h1>
-        <li>Abraham Silvera Mogollon</li>
+        <li>Prueba MicroFront</li>
       </div>
     }
     makeFooter={() => <Footer />}
